@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.practicau1_8_mayorymenor_brianalejandrocasaslopez.MainActivity">
+
+    <EditText
+        android:id="@+id/primerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer número"
+        android:paddingBottom="15dp"
+        android:layout_alignParentTop="true"
+        android:inputType="number"
+        />
+
+    <EditText
+        android:id="@+id/segundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo número"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/primerNumero"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/tercerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tercer número"
+        android:layout_below="@id/segundoNumero"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botonMenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tercerNumero"
+        android:layout_marginTop="180dp"
+        android:onClick="numeroMenor"
+        android:text="¿CUÁL ES MENOR?"/>
+
+    <Button
+        android:id="@+id/botonMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/botonMenor"
+        android:onClick="numeroMayor"
+        android:text="¿CUÁL ES MAYOR?"/>
+    />
+</RelativeLayout>

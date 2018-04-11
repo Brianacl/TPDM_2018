@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PracticaU1_6_Calculadora</string>
+    <string-array name="opcionesmenuprincipal">
+    <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+    </string-array>
+</resources>

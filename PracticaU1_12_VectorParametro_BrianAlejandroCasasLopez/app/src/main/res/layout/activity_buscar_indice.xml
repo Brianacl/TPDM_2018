@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.practicau1_12_vectorparametro_brianalejandrocasaslopez.BuscarIndice">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posición a mostrar:"
+        android:textSize="25dp"
+        android:paddingBottom="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/txtPosicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="MOSTRAR"
+        android:layout_marginTop="20dp"
+        android:paddingRight="40dp"
+        android:paddingLeft="40dp"/>
+
+    <TextView
+        android:id="@+id/viewPosicion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Posición:"
+        android:textSize="25dp"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:paddingTop="30dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:inputType="number"/>
+
+</LinearLayout>

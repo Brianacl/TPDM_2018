@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.practica_u3_3_trivia_brianalejandrocasaslopez.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:id="@+id/pregunta"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/estilo_edit_text"
+        android:text="Hola mundo" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000"
+        android:id="@+id/respuestaUno"
+        android:layout_marginBottom="10dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp"
+        android:id="@+id/respuestaDos"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:id="@+id/respuestaTres"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:text="------------------------------------------------------"/>
+
+    <Button
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¡Nuevo juego!"
+        android:textSize="20sp"
+        android:id="@+id/btnComenzar"/>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/esferas"
+        android:background="@drawable/esfera4"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mx.edu.ittepic.tpdmu2_ejercicio1.Main2Activity"
+    tools:showIn="@layout/activity_main2">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="TU USUARIO ES TU NUM CELULAR"
+        android:inputType="number"
+        android:id="@+id/autenticacionusuario"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CONTRASEÑA"
+        android:inputType="textPassword"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/autenticacioncontrasena"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENTRAR"
+        android:id="@+id/validar"
+        android:layout_gravity="center"
+        android:paddingRight="50dp"
+        android:paddingLeft="50dp"/>
+
+</LinearLayout>

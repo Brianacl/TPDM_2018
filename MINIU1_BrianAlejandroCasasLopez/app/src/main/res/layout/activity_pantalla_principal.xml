@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo1"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.miniu1_brianalejandrocasaslopez.PantallaPrincipal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:text="BIENVENIDO"
+        android:textSize="40sp"
+        android:paddingTop="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:padding="20dp"
+        android:text="Sistema Integral de Información Social"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de control"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/estilo_edit_text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña"
+        android:textAlignment="center"
+        android:textColorHint="#FFFFFF"
+        android:padding="15dp"
+        android:textSize="20dp"
+        android:layout_margin="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/estilo_edit_text"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INGRESAR"
+        android:textColor="#FFFFFF"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:background="@drawable/estilo_botones"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="E D D I"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="||"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Siveduc2"
+            android:textColor="#ffffff"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

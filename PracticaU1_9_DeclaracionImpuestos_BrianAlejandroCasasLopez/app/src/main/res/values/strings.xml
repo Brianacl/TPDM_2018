@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PracticaU1_9_DeclaracionImpuestos_BrianAlejandroCasasLopez</string>
+    <string-array name="opcionesMenu">
+        <item>Persona física</item>
+        <item>Persona moral</item>
+    </string-array>
+</resources>

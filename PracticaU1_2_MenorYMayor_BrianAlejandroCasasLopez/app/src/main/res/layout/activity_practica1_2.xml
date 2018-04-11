@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context="mx.edu.ittepic.practicau1_2_menorymayor_brianalejandrocasaslopez.Practica1_2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="INTRODUZCA UN NÚMERO EN CADA CAMPO"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/primerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Primer número"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/segundoNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Segundo número"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/tercerNumero"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tercer número"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/botonMenor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿CUÁL ES MENOR?"/>
+
+    <Button
+        android:id="@+id/botonMayor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¿CUÁL ES MAYOR?"/>
+    />
+
+    <Button
+        android:id="@+id/botonLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LIMPIAR CAMPOS"/>
+    />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Aquí aparecera el resultado"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/practica1"
+    android:orientation="vertical"
+    tools:context="mx.edu.ittepic.practicau1_1_layoutsymaslayouts_brianalejandrocasaslopez.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="150dp"
+        android:paddingBottom="140dp">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="300px"
+        android:src="@drawable/persona" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp">
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="4/10"
+        android:textSize="60sp"
+        android:textColor="#FFFFFF"
+        android:layout_gravity="top"/>
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="personas desean haber sido mejores en deporte."
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:layout_gravity="bottom"/>
+    </FrameLayout>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Saltar"
+        android:padding="25dp"/>
+</LinearLayout>
+

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TPDMU1_Ejercico5</string>
+    <string-array name="opcionesspinner">
+        <item>Amarillo</item>
+        <item>Verde</item>
+        <item>Blanco</item>
+        <item>Azul</item>
+    </string-array>
+</resources>

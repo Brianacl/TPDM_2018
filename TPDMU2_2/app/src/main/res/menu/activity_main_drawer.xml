@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_insertar"
+            android:icon="@drawable/insertar"
+            android:title="Insertar" />
+        <item
+            android:id="@+id/nav_consultar"
+            android:icon="@drawable/consulta"
+            android:title="Consultar" />
+        <item
+            android:id="@+id/nav_actualizar"
+            android:icon="@drawable/actualizar"
+            android:title="Actualizar" />
+        <item
+            android:id="@+id/nav_eliminar"
+            android:icon="@drawable/eliminar"
+            android:title="Eliminar" />
+    </group>
+
+    <item android:title="Otras funcionalidades">
+        <menu>
+            <item
+                android:id="@+id/nav_exportar"
+                android:icon="@drawable/exportar"
+                android:title="Exportar a EXCEL" />
+            <item
+                android:id="@+id/nav_acercaDe"
+                android:icon="@drawable/acercade"
+                android:title="Acerca de..." />
+        </menu>
+    </item>
+
+</menu>

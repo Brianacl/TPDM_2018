@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:padding="20dp"
+    tools:context="mx.edu.ittepic.tpdmu1_ejercico5.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/login"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="30dp"
+        android:padding="10dp"
+        android:background="@drawable/contorno_imagen"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu nombre"
+        style="@style/campostext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu domicilio"
+        style="@style/campostext"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/opcionesspinner"
+        style="@style/campostext"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ENVIAR"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/fondoboton"/>
+
+</LinearLayout>
+
+
+

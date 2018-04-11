@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">TPDM_U1_Ejercicio3</string>
+    <string-array name="opcionesmenuprincipal">
+        <item>Calcular</item>
+        <item>Guardar en archivo</item>
+        <item>Leer desde archivo</item>
+        <item>Acerca de...</item>
+        <item>Salir</item>
+    </string-array>
+
+    <string-array name="opcionescalculo">
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+        <item>Dividir</item>
+    </string-array>
+</resources>

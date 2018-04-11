@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group />
+    <item
+        android:id="@+id/idAltas"
+        android:title="Altas" />
+    <item
+        android:id="@+id/idBajas"
+        android:title="Bajas" />
+    <item
+        android:id="@+id/idModificaciones"
+        android:title="Modificaciones" />
+    <item
+        android:id="@+id/idConsultas"
+        android:title="Consultas" />
+    <item
+        android:id="@+id/idSalir"
+        android:title="Salir" />
+</menu>

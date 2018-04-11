@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/idAlumnos"
+        android:title="Ventana Alumnos" />
+    <item
+        android:id="@+id/idMaterias"
+        android:title="Ventana materias" />
+    <item
+        android:id="@+id/idBoleta"
+        android:title="Ventana Boleta" />
+    <item
+        android:id="@+id/idSalirApp"
+        android:title="Salir aplicación" />
+    <item
+        android:id="@+id/idConsultaMateria"
+        android:title="Consultar materia" />
+</menu>

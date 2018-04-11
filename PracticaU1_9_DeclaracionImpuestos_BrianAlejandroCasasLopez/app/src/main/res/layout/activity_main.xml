@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context="mx.edu.ittepic.practicau1_9_declaracionimpuestos_brianalejandrocasaslopez.MainActivity">
+
+    <TextView
+        android:id="@+id/encabezado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Declaración de impuestos"
+        android:textAlignment="center"
+        android:textColor="#1c8ab9"
+        android:textSize="30sp"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe tu salario por hora"
+        android:paddingBottom="15dp"
+        android:layout_below="@id/encabezado"
+        android:inputType="numberDecimal"
+        />
+
+    <EditText
+        android:id="@+id/horasTotales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Horas totales trabajadas"
+        android:paddingBottom="15dp"
+        android:paddingTop="20dp"
+        android:layout_below="@id/salario"
+        android:inputType="number" />
+
+    <Spinner
+        android:id="@+id/tipoPersona"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/opcionesMenu"
+        android:layout_below="@id/horasTotales"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/subtotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tipoPersona"
+        android:text="Subtotal: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/iva"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subtotal"
+        android:text="IVA: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iva"
+        android:text="Total: "
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnPagar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/total"
+        android:text="REALIZAR PAGO"
+        android:onClick="obtenerDatos"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>

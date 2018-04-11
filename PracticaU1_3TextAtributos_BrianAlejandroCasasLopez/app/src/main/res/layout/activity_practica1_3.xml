@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical"
+    tools:context="mx.edu.ittepic.practicau1_3textatributos_brianalejandrocasaslopez.Practica1_3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Elija un color:"
+        android:textColor="#000000"/>
+
+    <Spinner
+        android:id="@+id/spinnerColores"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></Spinner>
+
+    <EditText
+        android:id="@+id/mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escriba un mensaje aquí"/>
+
+    <Button
+        android:id="@+id/btnaccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Texto y color"/>
+
+    <TextView
+        android:id="@+id/viewMensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="50dp"
+        android:textAlignment="center"/>
+
+</LinearLayout>

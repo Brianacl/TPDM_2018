@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PracticaU1_5_Activitys_BrianAlejandroCasasLopez</string>
+    <string-array name="opcionesmenuprincipal">
+        <item>Ecuaciones</item>
+        <item>Concatenar</item>
+        <item>Guardar en archivo</item>
+        <item>Recuperar de archivo</item>
+        <item>Salir</item>
+    </string-array>
+</resources>
