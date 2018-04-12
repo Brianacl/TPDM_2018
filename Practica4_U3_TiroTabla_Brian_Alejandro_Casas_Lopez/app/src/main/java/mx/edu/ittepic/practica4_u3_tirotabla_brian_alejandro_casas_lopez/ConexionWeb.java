@@ -1,4 +1,4 @@
-package mx.edu.ittepic.practica_u3_3_trivia_brianalejandrocasaslopez;
+package mx.edu.ittepic.practica4_u3_tirotabla_brian_alejandro_casas_lopez;
 
 import android.os.AsyncTask;
 import android.util.Log;
@@ -15,11 +15,7 @@ import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by titab on 07/04/2018.
- */
-
-public class ConexionWeb extends AsyncTask<URL, String, String>{
+public class ConexionWeb extends AsyncTask<URL, String, String> {
 
     List<String[]> variables;
     MainActivity punteroMain;
@@ -27,35 +23,34 @@ public class ConexionWeb extends AsyncTask<URL, String, String>{
     public ConexionWeb(MainActivity direccionActivity){
         punteroMain = direccionActivity;
         variables = new ArrayList<>();
-    }//fin constructor
+    }//Fin contructor
 
-    public void agregarVariables(String pregunta, String respuesta){
+    public void agregarVariables(String variable, String contendido){
         String [] temp = new String[2];
-        temp[0] = pregunta;
-        temp[1] = respuesta;
-        //temp[2] = respuetaDos;
-        //temp[3] = respuestaTres;
 
+        temp[0] = variable;
+        temp[1] = contendido;
         variables.add(temp);
-    }//Fin agregarVariables
+    }
 
     @Override
     protected String doInBackground(URL... urls) {
         String POST = "";
         String respuesta = "";
 
-        for(int i=0; i < variables.size(); i++){
+        for(int i = 0; i < variables.size(); i++){
             String[] temporal = variables.get(i);
-            try{
-                POST+= temporal[0]+"="+ URLEncoder.encode(temporal[1], "UTF-8")+" ";
+            try {
+                POST += temporal[0]+"="+ URLEncoder.encode(temporal[1], "UTF-8")+" ";
             }catch (Exception e){
-                return "ERROR_404_0";
+                return "ERROR: 404_0";
             }
         }//Fin for
 
         POST = POST.trim();
         POST = POST.replace(" ","&");
         Log.v("POST", POST);
+
         HttpURLConnection conexion = null;
 
         try{
@@ -65,9 +60,9 @@ public class ConexionWeb extends AsyncTask<URL, String, String>{
             conexion.setDoInput(true);
             conexion.setFixedLengthStreamingMode(POST.length()); //Cantidad de bytes que va a mandar
             conexion.setRequestMethod("POST");
-            conexion.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
+            conexion.setRequestProperty("Content-Type", "Application/x-www-form-urlencoded");
 
-              publishProgress("Recuperando respuesta del servidor");
+            publishProgress("Recuperando respuesta del servidor");
 
             OutputStream flujoSalida = new BufferedOutputStream(conexion.getOutputStream());
             flujoSalida.write(POST.getBytes());
@@ -100,15 +95,12 @@ public class ConexionWeb extends AsyncTask<URL, String, String>{
                 conexion.disconnect();
             }
         }
-        return respuesta;
-    }//fin doInBackGroud
 
-    protected void onProgressUpdate(String... r){
-        punteroMain.cambiarMensaje(r[0]);
-    }
+        return respuesta;
+    }//Fin doInBackground
 
     protected void onPostExecute(String respuesta){
-        punteroMain.procesarRespuesta(respuesta);
-    }//fin de onPostExecute
+            punteroMain.procesarRespuesta(respuesta);
 
-}//Fin clase
+    }//Fin de onPostExecute
+}

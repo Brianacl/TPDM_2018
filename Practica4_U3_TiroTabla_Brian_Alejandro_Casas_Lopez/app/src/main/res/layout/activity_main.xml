@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:text="Registro de empleados"
+        android:textAlignment="center"
+        android:textColor="#000"/>
+
+    <EditText
+        android:hint="Número celular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/celular"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:hint="Nombre del empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nombre"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:hint="Domicilio del empleado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/domicilio"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:hint="Antigüedad (años)"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/antiguedad"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <EditText
+        android:hint="Fecha de nacimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fecha"
+        android:inputType="date"
+        android:layout_marginBottom="10dp"
+        />
+
+    <EditText
+        android:hint="Sueldo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sueldo"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="10dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textSize="20dp" />
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="R"
+            android:textSize="20dp"
+            android:id="@+id/btnConsultar"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="U"
+            android:textSize="20dp"
+            android:id="@+id/btnActualizar"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:text="D"
+            android:textSize="20dp"
+            android:id="@+id/btnEliminar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
