@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
             //Ejecución
 
             URL direccion = new URL("https://tpdm-brian.000webhostapp.com/Empleados/einsertar.php");
-            progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
+            //progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
             conexionWeb.execute(direccion);
         }catch (MalformedURLException e){
             Toast.makeText(MainActivity.this, "No se pudo contectar con el servidor", Toast.LENGTH_LONG).show();
@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
             }
             //Ejecución
             URL direccion = new URL("https://tpdm-brian.000webhostapp.com/Empleados/econsultarfiltrar.php");
-            progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
+            //progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
             conexionWeb.execute(direccion);
         }catch (MalformedURLException e){
             Toast.makeText(MainActivity.this, "No se pudo contectar con el servidor", Toast.LENGTH_LONG).show();
@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity {
 
             //Ejecución
             URL direccion = new URL("https://tpdm-brian.000webhostapp.com/Empleados/eactualizar.php");
-            progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
+            //progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
             conexionWeb.execute(direccion);
         }catch (MalformedURLException e){
             Toast.makeText(MainActivity.this, "No se pudo contectar con el servidor", Toast.LENGTH_LONG).show();
@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
 
             //Ejecución
             URL direccion = new URL("https://tpdm-brian.000webhostapp.com/Empleados/eliminar.php");
-            progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
+            //progreso = ProgressDialog.show(MainActivity.this, "Atención", "Conectando con servidor");
             conexionWeb.execute(direccion);
         }catch (MalformedURLException e){
             Toast.makeText(MainActivity.this, "No se pudo contectar con el servidor", Toast.LENGTH_LONG).show();
@@ -219,6 +219,7 @@ public class MainActivity extends AppCompatActivity {
     }//Fin eliminar
 
     public void procesarRespuesta(String respuesta){
+        String datos[] = respuesta.split(",");
         AlertDialog.Builder alertaMensaje = new AlertDialog.Builder(MainActivity.this);
         if(respuesta.equals("ERROR: 404_1")){
             respuesta = "Error: Flujo Entrada/Salida no funciona";
@@ -237,18 +238,28 @@ public class MainActivity extends AppCompatActivity {
             return;
         }
 
-        if(respuesta.equals("Se eliminó el empleado")){
+        if(respuesta.equals("Se eliminó el empleado "+txtCelular.getText().toString())){
             Toast.makeText(this, "Se elimino el empleado", Toast.LENGTH_SHORT).show();
-            txtCelular.setText("");
+            limpiarComponentes();
             return;
         }
 
-        String datos[] = respuesta.split(",");
-        txtNombre.setText(datos[1]);
-        txtDomicilio.setText(datos[2]);
-        txtAntiguedad.setText(datos[3]);
-        txtFechaNac.setText(datos[4]);
-        txtSueldo.setText(datos[5]);
+        if(respuesta.equals("Se actualizó correctamente!")){
+            Toast.makeText(this, "Se actualizó correctamente!", Toast.LENGTH_SHORT).show();
+            limpiarComponentes();
+            return;
+        }
+
+        if(datos.length > 2) {
+            txtNombre.setText(datos[1]);
+            txtDomicilio.setText(datos[2]);
+            txtAntiguedad.setText(datos[3]);
+            txtFechaNac.setText(datos[5]);
+            txtSueldo.setText(datos[4]);
+            return;
+        }
+
+        Toast.makeText(this, respuesta, Toast.LENGTH_SHORT).show();
 
     }//Fin procesarRespuesta
 
