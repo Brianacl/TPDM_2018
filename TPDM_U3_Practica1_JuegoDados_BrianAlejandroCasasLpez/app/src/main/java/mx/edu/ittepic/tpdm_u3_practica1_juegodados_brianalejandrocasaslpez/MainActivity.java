@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity {
 
     private boolean terminoJuego(){
         if(turno < 4) {return false;}
-        if(puntaje1 > puntaje2 && puntaje1 > puntaje3 && puntaje1 > puntaje4){ganador = "¡Felicidades jugador1! Tu puntaje: "+puntaje1;}
-        if(puntaje2 > puntaje1 && puntaje2 > puntaje3 && puntaje2 > puntaje4){ganador = "¡Felicidades jugador2! Tu puntaje: "+puntaje2;}
-        if(puntaje3 > puntaje1 && puntaje3 > puntaje2 && puntaje3 > puntaje4){ganador = "¡Felicidades jugador3! Tu puntaje: "+puntaje3;}
-        if(puntaje4 > puntaje1 && puntaje4 > puntaje2 && puntaje4 > puntaje3){ganador = "¡Felicidades jugador4! Tu puntaje: "+puntaje4;}
+        if(puntaje1 > puntaje2 && puntaje1 > puntaje3 && puntaje1 > puntaje4){ganador = "¡Felicidades jugador 1! Tu puntaje: "+puntaje1;}
+        if(puntaje2 > puntaje1 && puntaje2 > puntaje3 && puntaje2 > puntaje4){ganador = "¡Felicidades jugador 2! Tu puntaje: "+puntaje2;}
+        if(puntaje3 > puntaje1 && puntaje3 > puntaje2 && puntaje3 > puntaje4){ganador = "¡Felicidades jugador 3! Tu puntaje: "+puntaje3;}
+        if(puntaje4 > puntaje1 && puntaje4 > puntaje2 && puntaje4 > puntaje3){ganador = "¡Felicidades jugador 4! Tu puntaje: "+puntaje4;}
         return true;
     }
 
